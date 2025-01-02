@@ -21,6 +21,7 @@ async def handler(websocket, path):
         log_file_path = os.path.join('logs', f'{user_id}.log')
         print(f"Connection established with User ID: {user_id}")
         async for message in websocket:
+            print(f"Received message: {message}")  # Log the message
             await append_to_file(log_file_path, message)
     except websockets.ConnectionClosed:
         print(f"Connection closed for {path}.")
