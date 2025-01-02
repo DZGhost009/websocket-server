@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 # Get port from Render environment variable
-PORT = int(os.environ.get('PORT', '8000'))
+PORT = int(os.environ.get('PORT', '10000'))
 
 # Ensure logs directory exists
 if not os.path.exists('logs'):
