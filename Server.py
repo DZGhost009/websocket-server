@@ -3,7 +3,7 @@ import websockets
 import os
 from datetime import datetime
 
-# Get port from Railway environment variable
+# Get port from Render environment variable
 PORT = int(os.environ.get('PORT', '8000'))
 
 # Ensure logs directory exists
